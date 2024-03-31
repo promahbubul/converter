@@ -10,4 +10,3 @@ function convertTemparature() {
 }
 
 
-// data info
