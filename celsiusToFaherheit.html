@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celsius to Fahrenheit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="h-screen w-full bg-slate-700">
+        <!-- HEADER -->
+        <header class="bg-orange-500 p-5 flex flex-row  items-center rounded-b-2xl">
+            <a href="./index.html" class="w-full ">
+                <img src="https://www.transparentpng.com/thumb/house/house-vector-5.png" alt=""
+                    class="p-2 bg-white rounded-lg w-10 h-10" />
+            </a>
+            <div class="w-full ">
+                <h1 class="text-white text-4xl font-extrabold">Celsius to Fahrenheit Convert
+                </h1>
+            </div>
+            <div class="w-full "></div>
+        </header>
+        <!-- MAIN -->
+        <div class="py-5 ">
+            <main
+                class="max-w-5xl bg-slate-200 flex flex-col gap-3 items-center justify-center h-[calc(100vh-128px)] mx-auto rounded-2xl ">
+                <!-- input area -->
+                <div class="flex flex-row gap-2 items-center">
+                    <input type="text" onkeyup="convertTemparature()"
+                        class="text-orange-500 py-3 px-4 rounded-md outline-none border border-orange-500" id="input">
+                    <p class="text-2xl text-black font-bold">Celsius</p>
+                </div>
+                <!-- output area -->
+                <div class="flex flex-row items-center gap-3">
+                    <h2 class="text-4xl font-bold text-orange-500" id="output">0</h2>
+                    <p class="text-2xl text-black font-bold">Fahrenheit</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="./scripts/celsiusToFahrenheit.js"></script>
+</body>
+
+</html>
